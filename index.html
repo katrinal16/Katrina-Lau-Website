@@ -14,6 +14,11 @@
             margin: 0; /* Remove default margin */
         }
 
+        #wrapper {
+            max-width: 800px; /* Set your desired maximum width */
+            margin: 0 auto; /* Center the content by setting left and right margins to auto */
+        }
+
         h1 {
             font-family: "Abril Fatface", serif;
             font-size: 120px;
@@ -26,7 +31,7 @@
         #nav {
             position: fixed; 
             top: 0; /* Align to the top */
-            right: 10; /* Align to the right */
+            right: 0; /* Align to the right */
             padding: 10px; /* Add some padding for better visibility */
         }
 
@@ -45,31 +50,31 @@
             text-decoration: none;
             color: #6c584b;
         }
-      
-      img {
-    position: absolute; /* Set the position of the image to absolute */
-    bottom: 0; /* Align to the bottom */
-    right: 0; /* Align to the right */
-    margin-bottom: 20px; /* Add some margin for better spacing */
-}
-      
+
+        img {
+            position: absolute; /* Set the position of the image to absolute */
+            bottom: 0; /* Align to the bottom */
+            right: 0; /* Align to the right */
+            margin-bottom: 20px; /* Add some margin for better spacing */
+        }
     </style>
 </head>
 
 <body>
-    <h1>Hi there, my name is Katrina!</h1>
+    <div id="wrapper">
+        <h1>Hi there, my name is Katrina!</h1>
 
-    <div id="nav">
-        <ul>
-            <li><a href="">about</a></li>
-            <li><a href="">projects</a></li>
-            <li><a href="">gallery</a></li>
-            <li><a href="">contact</a></li>
-        </ul>
+        <div id="nav">
+            <ul>
+                <li><a href="">about</a></li>
+                <li><a href="">projects</a></li>
+                <li><a href="">gallery</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </div>
+
+        <img src="personal_logo.png" alt="Personal Logo" width="419" height="421">
     </div>
-
-    <img src="personal_logo.png" alt="Personal Logo" width="419" height="421">
-  
 </body>
 
 </html>
